@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://caj6jkl2g6qjk"]
+
+[ext_resource type="Script" path="res://resources/item/inventory_item.gd" id="1_x5r24"]
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="2_aym8a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bskdg"]
+atlas = ExtResource("2_aym8a")
+region = Rect2(764, 188, 16, 16)
+
+[resource]
+script = ExtResource("1_x5r24")
+sprite = SubResource("AtlasTexture_bskdg")
+name = "Gold"

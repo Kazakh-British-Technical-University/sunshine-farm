@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://hn34ip8lfmf6"]
+
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="1_j4fkw"]
+[ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_4fhh3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b16l3"]
+atlas = ExtResource("1_j4fkw")
+region = Rect2(136, 204, 16, 16)
+
+[node name="GardenBed" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_b16l3")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("2_4fhh3")]

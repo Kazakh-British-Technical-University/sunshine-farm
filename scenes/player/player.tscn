@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bulw26oj5t788"]
+[gd_scene load_steps=8 format=3 uid="uid://bulw26oj5t788"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_05p8g"]
 [ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="1_pkxiw"]
 [ext_resource type="PackedScene" uid="uid://d0506gv1twh14" path="res://scenes/components/interactor_component.tscn" id="3_hys0g"]
+[ext_resource type="Script" path="res://scenes/components/inventory_component.gd" id="4_4s1gc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1hmkl"]
 radius = 8.0
@@ -33,3 +34,6 @@ shape = SubResource("CircleShape2D_1hmkl")
 sprite_frames = SubResource("SpriteFrames_78eb2")
 
 [node name="InteractorComponent" parent="." instance=ExtResource("3_hys0g")]
+
+[node name="InventoryComponent" type="Node" parent="."]
+script = ExtResource("4_4s1gc")

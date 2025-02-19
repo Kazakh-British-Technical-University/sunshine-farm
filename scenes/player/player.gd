@@ -8,15 +8,30 @@ class_name Player
 var _is_control_locked = false;
 
 
-func _process(_delta):	
-	if (Input.is_action_just_pressed("interact") && !_is_control_locked):
+func _process(_delta):
+	if (_is_control_locked):
+		return
+		
+	if ($InventoryComponent != null):
+		_switch_item()
+	if ($InteractorComponent != null):
+		_interact()
+	_move()
+
+
+func _switch_item():
+	if (Input.is_action_just_pressed("switch_item_left")):
+		$InventoryComponent.switch_item(-1)
+	elif (Input.is_action_just_pressed("switch_item_right")):
+		$InventoryComponent.switch_item(1)
+
+
+func _interact():
+	if (Input.is_action_just_pressed("interact")):
 		$InteractorComponent.interact()
 
-	if (!_is_control_locked):
-		_move()
 
-
-func _move():
+func _move():	
 	var movement_vector = _get_movement_vector()
 	var direction = movement_vector.normalized()
 	
