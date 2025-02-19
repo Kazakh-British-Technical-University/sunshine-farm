@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=4 uid="uid://duiwwkprs8y16"]
+[gd_scene load_steps=3 format=4 uid="uid://duiwwkprs8y16"]
 
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_0jhs4"]
+[ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="2_oyu3l"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,3 +11,6 @@ tile_set = ExtResource("1_0jhs4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="Player" parent="." instance=ExtResource("2_oyu3l")]
+position = Vector2(-56, 32)

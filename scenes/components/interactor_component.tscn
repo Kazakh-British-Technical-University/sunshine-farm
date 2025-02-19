@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0506gv1twh14"]
+
+[ext_resource type="Script" path="res://scenes/components/interactor_component.gd" id="1_bipe8"]
+[ext_resource type="PackedScene" uid="uid://cd80uyod825ac" path="res://scenes/ui/highlight.tscn" id="2_4ij2m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g3mr4"]
+radius = 16.0
+
+[node name="InteractorComponent" type="Area2D"]
+script = ExtResource("1_bipe8")
+_highlight_scene = ExtResource("2_4ij2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_g3mr4")
