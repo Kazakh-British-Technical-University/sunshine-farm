@@ -26,10 +26,10 @@ func _process(_delta):
 	_highlight.global_position = _get_priority_interactable().global_position
 
 
-func interact():
+func interact(origin):
 	if (len(_interactable_list) == 0):
 		return
-	_get_priority_interactable().interact()
+	_get_priority_interactable().interact(origin)
 
 
 func _get_priority_interactable():

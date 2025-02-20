@@ -8,7 +8,8 @@ var current_item: InventoryItem
 
 
 func _ready():
-	items[load("res://resources/item/gold.tres")] = 1
+	items[load("res://resources/item/empty.tres")] = 1
+	items[load("res://resources/item/gold.tres")] = 10
 	items[load("res://resources/item/seed1.tres")] = 1
 
 
@@ -43,5 +44,6 @@ func try_spend_item(item, amount):
 	
 	if (items[item] == 0):
 		items.erase(item)
+		switch_item(-1)
 	
 	return true
