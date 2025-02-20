@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="SeedItem" load_steps=5 format=3 uid="uid://2fpp5nkcg57a"]
 
 [ext_resource type="Script" path="res://resources/item/seed_item.gd" id="1_px0an"]
-[ext_resource type="Resource" uid="uid://cc4xyxyqralwx" path="res://resources/plant/Plant1.tres" id="1_rbrbu"]
+[ext_resource type="Resource" uid="uid://cc4xyxyqralwx" path="res://resources/plant/plant_1.tres" id="1_rbrbu"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="2_s7vh8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ab2fg"]
