@@ -9,8 +9,11 @@ signal evening_started
 
 var _timer: Timer
 
-func _ready():
+func _enter_tree():
 	Globals.time_manager = self
+	
+	
+func _ready():
 	_timer = $Timer
 	_start_day()
 	

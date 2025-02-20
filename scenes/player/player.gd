@@ -8,7 +8,7 @@ class_name Player
 var _is_control_locked = false;
 
 
-func _ready():
+func _enter_tree():
 	Globals.player = self
 
 

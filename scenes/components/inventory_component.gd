@@ -6,10 +6,12 @@ signal items_updated(item: InventoryItem, new_amount: int)
 var items: Dictionary
 var current_item: InventoryItem
 
+var _empty = load("res://resources/item/empty.tres")
 
 func _ready():
-	items[load("res://resources/item/empty.tres")] = 1
+	items[_empty] = 1
 	items[load("res://resources/item/gold.tres")] = 99
+	current_item = _empty
 
 
 func switch_item(offset: int):
