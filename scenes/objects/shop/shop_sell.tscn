@@ -1,15 +1,66 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnece145536hi"]
+[gd_scene load_steps=11 format=3 uid="uid://cnece145536hi"]
 
 [ext_resource type="Script" path="res://scenes/objects/shop/shop_sell.gd" id="1_bci3b"]
 [ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_dntkg"]
+[ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="2_fbv38"]
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="3_u6x43"]
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="4_nwos3"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e866c"]
-size = Vector2(16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfn3o"]
+atlas = ExtResource("2_fbv38")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5apb"]
+atlas = ExtResource("4_nwos3")
+region = Rect2(272, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kwte"]
+atlas = ExtResource("4_nwos3")
+region = Rect2(765, 187, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_clbj4"]
+size = Vector2(26, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqcaj"]
+size = Vector2(32, 11)
 
 [node name="ShopSell" type="Node2D"]
 script = ExtResource("1_bci3b")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("PlaceholderTexture2D_e866c")
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visuals"]
+position = Vector2(9, -16)
+texture = SubResource("AtlasTexture_cfn3o")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="Visuals"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 255, 255, 1, 0, 11, 0, 4, 0, 0, 0, 1, 0, 255, 255, 1, 0, 12, 0, 4, 0, 0, 0)
+tile_set = ExtResource("3_u6x43")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Visuals"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 255, 255, 1, 0, 10, 0, 3, 0, 0, 0, 0, 0, 254, 255, 1, 0, 11, 0, 1, 0, 0, 0, 1, 0, 254, 255, 1, 0, 11, 0, 2, 0, 0, 0, 1, 0, 255, 255, 1, 0, 11, 0, 3, 0, 0, 0)
+tile_set = ExtResource("3_u6x43")
+
+[node name="ItemFrame" type="Sprite2D" parent="Visuals"]
+position = Vector2(21, -21)
+texture = SubResource("AtlasTexture_g5apb")
+
+[node name="ItemSprite" type="Sprite2D" parent="Visuals"]
+position = Vector2(21, -20)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_4kwte")
 
 [node name="InteractableComponent" parent="." instance=ExtResource("2_dntkg")]
+position = Vector2(16, -8)
+
+[node name="CollisionShape2D" parent="InteractableComponent" index="0"]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_clbj4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(16, -5.5)
+shape = SubResource("RectangleShape2D_sqcaj")
+
+[editable path="InteractableComponent"]

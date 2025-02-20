@@ -9,6 +9,7 @@ var _gold = load("res://resources/item/gold.tres")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$InteractableComponent.interacted.connect(_on_interacted)
+	$Visuals/ItemSprite.texture = item_for_sale.sprite
 	
 	
 func _on_interacted(origin):
