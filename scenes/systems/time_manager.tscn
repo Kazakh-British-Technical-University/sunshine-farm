@@ -6,6 +6,7 @@
 script = ExtResource("1_341sp")
 day_duration = 15.0
 evening_duration = 5.0
+night_duration = 2.0
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true

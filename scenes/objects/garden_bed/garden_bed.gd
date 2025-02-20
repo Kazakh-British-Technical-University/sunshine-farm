@@ -6,7 +6,7 @@ var grow_phase: int
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Globals.time_manager.day_ended.connect(_on_day_ended)
+	Globals.time_manager.day_started.connect(_on_day_ended)
 	
 	if ($InteractableComponent != null):
 		$InteractableComponent.interacted.connect(_on_interacted)

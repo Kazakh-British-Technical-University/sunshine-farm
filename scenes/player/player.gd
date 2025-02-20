@@ -2,14 +2,30 @@ extends CharacterBody2D
 class_name Player
 
 
-@export var MAX_SPEED = 300.0
+@export var MAX_SPEED = 100.0
 
 
 var _is_control_locked = false;
+var _spawn_point;
 
 
 func _enter_tree():
 	Globals.player = self
+	
+	
+func _ready():
+	_spawn_point = global_position
+	Globals.time_manager.night_started.connect(_on_night_started)
+	Globals.time_manager.day_started.connect(_on_day_started)
+
+
+func _on_night_started():
+	_is_control_locked = true
+	
+	
+func _on_day_started():
+	_is_control_locked = false
+	global_position = _spawn_point
 
 
 func _process(_delta):

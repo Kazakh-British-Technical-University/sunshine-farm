@@ -11,4 +11,4 @@ region = Rect2(391, 153, 16, 16)
 script = ExtResource("1_7fidr")
 sprite = SubResource("AtlasTexture_xxytc")
 name = "Plant 1"
-price = 0
+price = 3

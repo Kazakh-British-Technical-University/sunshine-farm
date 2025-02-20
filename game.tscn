@@ -1,17 +1,24 @@
-[gd_scene load_steps=9 format=4 uid="uid://duiwwkprs8y16"]
+[gd_scene load_steps=11 format=4 uid="uid://duiwwkprs8y16"]
 
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_0jhs4"]
 [ext_resource type="PackedScene" uid="uid://du3mtxnk4scd8" path="res://scenes/systems/time_manager.tscn" id="1_onc1v"]
+[ext_resource type="Script" path="res://day_cycle_visuals.gd" id="2_4x7bl"]
 [ext_resource type="PackedScene" uid="uid://cortj6bsre7iy" path="res://scenes/ui/current_item_ui.tscn" id="3_breiy"]
 [ext_resource type="PackedScene" uid="uid://dqocl3uypytkq" path="res://scenes/objects/shop/shop_buy.tscn" id="4_pm063"]
 [ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/item/seed_1.tres" id="5_5byv1"]
 [ext_resource type="TileSet" uid="uid://c7xmt6ebuxygn" path="res://objects.tres" id="5_rleq0"]
 [ext_resource type="PackedScene" uid="uid://cnece145536hi" path="res://scenes/objects/shop/shop_sell.tscn" id="6_003g5"]
+[ext_resource type="Resource" uid="uid://ophdtaeoc2m4" path="res://resources/item/plant_1_item.tres" id="7_g63wt"]
 [ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="8_mlkmp"]
 
 [node name="Game" type="Node2D"]
 
 [node name="TimeManager" parent="." instance=ExtResource("1_onc1v")]
+
+[node name="DayCycleVisuals" type="CanvasModulate" parent="."]
+script = ExtResource("2_4x7bl")
+day_color = Color(1, 1, 1, 1)
+evening_color = Color(0.74902, 0.341176, 0.196078, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -26,16 +33,21 @@ tile_map_data = PackedByteArray("AAD4//r/AQAFAAAAAAD4//v/AQAFAAAAAAD4//z/AQAFAAA
 tile_set = ExtResource("1_0jhs4")
 
 [node name="Objects" type="TileMapLayer" parent="MainLevel/Flat"]
-tile_map_data = PackedByteArray("AAD5//z/AAAAAAAAAgD6//z/AAAAAAAAAgD7//z/AAAAAAAAAgD8//z/AAAAAAAAAgD9//z/AAAAAAAAAgD+//z/AAAAAAAAAgD///z/AAAAAAAAAgAAAPz/AAAAAAAAAgD5//7/AAAAAAAAAgD6//7/AAAAAAAAAgD7//7/AAAAAAAAAgD8//7/AAAAAAAAAgD9//7/AAAAAAAAAgD+//7/AAAAAAAAAgD///7/AAAAAAAAAgAAAP7/AAAAAAAAAgAGAPz/AAAAAAAAAgAGAP3/AAAAAAAAAgAGAP7/AAAAAAAAAgAGAP//AAAAAAAAAgAGAAAAAAAAAAAAAgAEAPz/AAAAAAAAAgAEAP3/AAAAAAAAAgAEAP7/AAAAAAAAAgAEAP//AAAAAAAAAgAEAAAAAAAAAAAAAgAGAAIAAAAAAAAAAgAGAAMAAAAAAAAAAgAGAAQAAAAAAAAAAgAGAAUAAAAAAAAAAgAEAAIAAAAAAAAAAgAEAAMAAAAAAAAAAgAEAAQAAAAAAAAAAgAEAAUAAAAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAD5//z/AAAAAAAAAgD6//z/AAAAAAAAAgD7//z/AAAAAAAAAgD8//z/AAAAAAAAAgD9//z/AAAAAAAAAgD+//z/AAAAAAAAAgD///z/AAAAAAAAAgAAAPz/AAAAAAAAAgD5//7/AAAAAAAAAgD6//7/AAAAAAAAAgD7//7/AAAAAAAAAgD8//7/AAAAAAAAAgD9//7/AAAAAAAAAgD+//7/AAAAAAAAAgD///7/AAAAAAAAAgAAAP7/AAAAAAAAAgAEAPz/AAAAAAAAAgAEAP3/AAAAAAAAAgAEAP7/AAAAAAAAAgAEAP//AAAAAAAAAgAEAAIAAAAAAAAAAgAEAAMAAAAAAAAAAgAEAAQAAAAAAAAAAgAGAPz/AAAAAAAAAgAGAP3/AAAAAAAAAgAGAP7/AAAAAAAAAgAGAP//AAAAAAAAAgAGAAIAAAAAAAAAAgAGAAMAAAAAAAAAAgAGAAQAAAAAAAAAAgAEAPv/AAAAAAAAAgAEAAEAAAAAAAAAAgAGAPv/AAAAAAAAAgAGAAEAAAAAAAAAAgA=")
 tile_set = ExtResource("5_rleq0")
 
 [node name="Sorted" type="Node2D" parent="MainLevel"]
 y_sort_enabled = true
 
 [node name="ShopBuy" parent="MainLevel/Sorted" instance=ExtResource("4_pm063")]
+position = Vector2(-80, 48)
 item_for_sale = ExtResource("5_5byv1")
 
+[node name="ShopBuy2" parent="MainLevel/Sorted" instance=ExtResource("4_pm063")]
+position = Vector2(-48, 48)
+item_for_sale = ExtResource("7_g63wt")
+
 [node name="ShopSell" parent="MainLevel/Sorted" instance=ExtResource("6_003g5")]
-position = Vector2(40, 18)
+position = Vector2(-112, 48)
 
 [node name="Player" parent="MainLevel/Sorted" instance=ExtResource("8_mlkmp")]
