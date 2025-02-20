@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://duiwwkprs8y16"]
+[gd_scene load_steps=8 format=4 uid="uid://duiwwkprs8y16"]
 
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_0jhs4"]
 [ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="2_oyu3l"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dqocl3uypytkq" path="res://scenes/objects/shop/shop_buy.tscn" id="4_pm063"]
 [ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/item/seed1.tres" id="5_5byv1"]
 [ext_resource type="PackedScene" uid="uid://cnece145536hi" path="res://scenes/objects/shop/shop_sell.tscn" id="6_003g5"]
+[ext_resource type="PackedScene" uid="uid://hn34ip8lfmf6" path="res://scenes/objects/garden_bed/garden_bed.tscn" id="7_fdai4"]
 
 [node name="Game" type="Node2D"]
 
@@ -28,3 +29,12 @@ item_for_sale = ExtResource("5_5byv1")
 
 [node name="ShopSell" parent="." instance=ExtResource("6_003g5")]
 position = Vector2(40, 18)
+
+[node name="GardenBed" parent="." instance=ExtResource("7_fdai4")]
+position = Vector2(-97, -8)
+
+[node name="GardenBed2" parent="." instance=ExtResource("7_fdai4")]
+position = Vector2(-58, -17)
+
+[node name="GardenBed3" parent="." instance=ExtResource("7_fdai4")]
+position = Vector2(-74, -32)

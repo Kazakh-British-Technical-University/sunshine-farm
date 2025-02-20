@@ -19,7 +19,6 @@ func switch_item(offset: int):
 	
 	current_item = items.keys()[next_index]
 	current_item_changed.emit(current_item)
-	print(current_item.name)
 
 
 func add_item(item, amount):
@@ -44,6 +43,7 @@ func try_spend_item(item, amount):
 	
 	if (items[item] == 0):
 		items.erase(item)
-		switch_item(-1)
+		if (item == current_item):
+			switch_item(-1)
 	
 	return true
