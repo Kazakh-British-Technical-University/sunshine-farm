@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnece145536hi"]
+
+[ext_resource type="Script" path="res://scenes/objects/shop/shop_sell.gd" id="1_bci3b"]
+[ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_dntkg"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e866c"]
+size = Vector2(16, 16)
+
+[node name="ShopSell" type="Node2D"]
+script = ExtResource("1_bci3b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_e866c")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("2_dntkg")]
