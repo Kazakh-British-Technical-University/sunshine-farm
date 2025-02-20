@@ -8,6 +8,10 @@ class_name Player
 var _is_control_locked = false;
 
 
+func _ready():
+	Globals.player = self
+
+
 func _process(_delta):
 	if (_is_control_locked):
 		return
@@ -28,7 +32,7 @@ func _switch_item():
 
 func _interact():
 	if (Input.is_action_just_pressed("interact")):
-		$InteractorComponent.interact()
+		$InteractorComponent.interact(self)
 
 
 func _move():	
