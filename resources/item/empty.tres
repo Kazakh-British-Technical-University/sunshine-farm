@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://bhjhtue6x0753"]
+
+[ext_resource type="Script" path="res://resources/item/inventory_item.gd" id="1_5sjx4"]
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="2_2dpxr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bskdg"]
+atlas = ExtResource("2_2dpxr")
+region = Rect2(3.517, 402.467, 16, 16)
+
+[resource]
+script = ExtResource("1_5sjx4")
+sprite = SubResource("AtlasTexture_bskdg")
+name = "Empty"
