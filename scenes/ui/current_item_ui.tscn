@@ -1,9 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cortj6bsre7iy"]
+[gd_scene load_steps=6 format=3 uid="uid://cortj6bsre7iy"]
 
 [ext_resource type="Script" path="res://scenes/ui/current_item_ui.gd" id="1_7h0m3"]
+[ext_resource type="Texture2D" uid="uid://dlhnnf5as7qeb" path="res://scenes/ui/keyboard_x.png" id="2_fiy0o"]
+[ext_resource type="Texture2D" uid="uid://du8pmsl1o3ht6" path="res://scenes/ui/keyboard_c.png" id="3_mbyu5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_viymd"]
 font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_r4bkj"]
+font_size = 24
 
 [node name="CurrentItemUI" type="Panel"]
 custom_minimum_size = Vector2(128, 64)
@@ -12,10 +17,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -32.0
-offset_top = 278.0
-offset_right = 32.0
-offset_bottom = 342.0
+offset_left = -64.0
+offset_top = 280.0
+offset_right = 64.0
+offset_bottom = 344.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7h0m3")
@@ -26,6 +31,25 @@ layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
 grow_vertical = 2
+
+[node name="PromptLeft" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -64.0
+grow_vertical = 2
+texture = ExtResource("2_fiy0o")
+
+[node name="PromptRight" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 128.0
+offset_right = 192.0
+grow_vertical = 2
+texture = ExtResource("3_mbyu5")
 
 [node name="Amount" type="Label" parent="."]
 custom_minimum_size = Vector2(64, 0)
@@ -38,5 +62,23 @@ offset_left = -1.0
 grow_horizontal = 0
 grow_vertical = 2
 label_settings = SubResource("LabelSettings_viymd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemName" type="Label" parent="."]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_top = -40.0
+offset_right = 64.0
+offset_bottom = -68.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Empty"
+label_settings = SubResource("LabelSettings_r4bkj")
 horizontal_alignment = 1
 vertical_alignment = 1

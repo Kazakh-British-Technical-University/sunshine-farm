@@ -12,6 +12,7 @@ func _ready():
 	items[_empty] = 1
 	items[load("res://resources/item/gold.tres")] = 99
 	current_item = _empty
+	current_item_changed.emit(current_item)
 
 
 func switch_item(offset: int):

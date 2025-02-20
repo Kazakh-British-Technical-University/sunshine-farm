@@ -11,6 +11,7 @@ func _ready():
 
 func _on_current_item_changed(item: InventoryItem):
 	$Texture.texture = item.sprite
+	$ItemName.text = item.name
 	
 	if (item.name == "Empty"):
 		$Amount.text = ""
