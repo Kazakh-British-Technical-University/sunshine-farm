@@ -9,8 +9,7 @@ var current_item: InventoryItem
 
 func _ready():
 	items[load("res://resources/item/empty.tres")] = 1
-	items[load("res://resources/item/gold.tres")] = 10
-	items[load("res://resources/item/seed1.tres")] = 1
+	items[load("res://resources/item/gold.tres")] = 99
 
 
 func switch_item(offset: int):

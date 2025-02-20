@@ -1,8 +1,6 @@
 extends Node2D
 
 
-@export var item_for_sale: InventoryItem
-
 var _gold = load("res://resources/item/gold.tres")
 var _empty = load("res://resources/item/empty.tres")
 
