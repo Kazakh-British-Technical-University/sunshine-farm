@@ -2,7 +2,6 @@ extends Node2D
 
 
 @export var item_for_sale: InventoryItem
-@export var price: int
 
 var _gold = load("res://resources/item/gold.tres")
 
@@ -17,7 +16,5 @@ func _on_interacted(origin):
 	if (inventory == null):
 		return
 		
-	if (inventory.try_spend_item(_gold, price)):
+	if (inventory.try_spend_item(_gold, item_for_sale.price)):
 		inventory.add_item(item_for_sale, 1)
-		
-	

@@ -11,3 +11,4 @@ region = Rect2(764, 188, 16, 16)
 script = ExtResource("1_x5r24")
 sprite = SubResource("AtlasTexture_bskdg")
 name = "Gold"
+price = 1
