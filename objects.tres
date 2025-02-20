@@ -1,10 +1,8 @@
-[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://c7xmt6ebuxygn"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://c7xmt6ebuxygn"]
 
-[ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="1_mlc40"]
 [ext_resource type="PackedScene" uid="uid://hn34ip8lfmf6" path="res://scenes/objects/garden_bed/garden_bed.tscn" id="2_7pgiw"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_23t1q"]
-scenes/1/scene = ExtResource("1_mlc40")
 scenes/2/scene = ExtResource("2_7pgiw")
 
 [resource]
