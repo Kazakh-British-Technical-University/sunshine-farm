@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=4 uid="uid://y122rmo211q5"]
+
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_p5tes"]
+
+[node name="House1" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(368, 192)
+
+[node name="Flat" type="Node2D" parent="."]
+
+[node name="Walls" type="TileMapLayer" parent="Flat"]
+tile_map_data = PackedByteArray("AAAAAP7/AQASABYAAAAAAP//AQASABcAAAABAP7/AQATABYAAAABAP//AQATABcAAAD/////AQASABcAAAD///7/AQASABYAAAD+//7/AQARABYAAAD+////AQARABcAAAA=")
+tile_set = ExtResource("1_p5tes")
+
+[node name="Roof" type="TileMapLayer" parent="Flat"]
+tile_map_data = PackedByteArray("AAAAAPz/AQAUABUAAAAAAP3/AQAUABYAAAAAAP7/AQAUABcAAAABAPz/AQAVABUAAAABAP3/AQAVABYAAAABAP7/AQAVABcAAAD+//3/AQAYABUAAAD+//7/AQAYABcAAAD///3/AQAZABUAAAD///7/AQAZABcAAAA=")
+tile_set = ExtResource("1_p5tes")
+
+[node name="Details" type="TileMapLayer" parent="Flat"]
+tile_map_data = PackedByteArray("AAABAP//AQAfAAYAAAAAAP//AQAeAAYAAAD/////AQAuAAQAAAAAAP3/AQARAAUAAAA=")
+tile_set = ExtResource("1_p5tes")
+
+[node name="Sorted" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Details2" type="TileMapLayer" parent="Sorted"]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAACAP//AQAxABgAAAACAP3/AQAxABgAAAACAP7/AQApAAoAAAA=")
+tile_set = ExtResource("1_p5tes")
+y_sort_origin = 8
