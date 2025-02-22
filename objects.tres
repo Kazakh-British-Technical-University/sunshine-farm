@@ -1,9 +1,11 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://c7xmt6ebuxygn"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://bu38kftqey1r"]
 
-[ext_resource type="PackedScene" uid="uid://hn34ip8lfmf6" path="res://scenes/objects/garden_bed/garden_bed.tscn" id="2_7pgiw"]
+[ext_resource type="PackedScene" uid="uid://y122rmo211q5" path="res://scenes/environment/house_1.tscn" id="1_m6t5j"]
+[ext_resource type="PackedScene" uid="uid://bbonaq8dc5gwy" path="res://scenes/environment/tree.tscn" id="2_yfyu0"]
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_23t1q"]
-scenes/2/scene = ExtResource("2_7pgiw")
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_g2gxi"]
+scenes/1/scene = ExtResource("1_m6t5j")
+scenes/2/scene = ExtResource("2_yfyu0")
 
 [resource]
-sources/0 = SubResource("TileSetScenesCollectionSource_23t1q")
+sources/0 = SubResource("TileSetScenesCollectionSource_g2gxi")

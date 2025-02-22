@@ -4,9 +4,9 @@
 
 [node name="House1" type="Node2D"]
 y_sort_enabled = true
-position = Vector2(368, 192)
 
 [node name="Flat" type="Node2D" parent="."]
+position = Vector2(-8, 8)
 
 [node name="Walls" type="TileMapLayer" parent="Flat"]
 tile_map_data = PackedByteArray("AAAAAP7/AQASABYAAAAAAP//AQASABcAAAABAP7/AQATABYAAAABAP//AQATABcAAAD/////AQASABcAAAD///7/AQASABYAAAD+//7/AQARABYAAAD+////AQARABcAAAA=")
@@ -22,6 +22,7 @@ tile_set = ExtResource("1_p5tes")
 
 [node name="Sorted" type="Node2D" parent="."]
 y_sort_enabled = true
+position = Vector2(-8, 8)
 
 [node name="Details2" type="TileMapLayer" parent="Sorted"]
 y_sort_enabled = true

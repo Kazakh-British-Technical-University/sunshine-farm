@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbonaq8dc5gwy"]
+
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_3b3tc"]
+
+[node name="Tree" type="Node2D"]
+y_sort_enabled = true
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(8, -8)
+tile_map_data = PackedByteArray(0, 0, 255, 255, 255, 255, 1, 0, 18, 0, 10, 0, 0, 0, 255, 255, 0, 0, 1, 0, 18, 0, 11, 0, 0, 0)
+tile_set = ExtResource("1_3b3tc")

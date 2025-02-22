@@ -27,7 +27,6 @@ script = ExtResource("1_5q0yu")
 [node name="Visuals" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
-visible = false
 position = Vector2(9, -16)
 texture = SubResource("AtlasTexture_whi0w")
 
@@ -40,11 +39,11 @@ tile_map_data = PackedByteArray(0, 0, 0, 0, 255, 255, 1, 0, 10, 0, 3, 0, 0, 0, 0
 tile_set = ExtResource("2_kcpc2")
 
 [node name="ItemFrame" type="Sprite2D" parent="Visuals"]
-position = Vector2(16, -21)
+position = Vector2(21, -21)
 texture = SubResource("AtlasTexture_g7o0y")
 
 [node name="ItemSprite" type="Sprite2D" parent="Visuals"]
-position = Vector2(16, -20)
+position = Vector2(21, -20)
 scale = Vector2(0.5, 0.5)
 
 [node name="InteractableComponent" parent="." instance=ExtResource("2_mnvbm")]
