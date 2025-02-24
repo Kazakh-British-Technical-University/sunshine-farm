@@ -1,13 +1,14 @@
-[gd_scene load_steps=10 format=4 uid="uid://bcwgp3lqy875b"]
+[gd_scene load_steps=11 format=4 uid="uid://bcwgp3lqy875b"]
 
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilesets/environment.tres" id="1_m8eg8"]
 [ext_resource type="TileSet" uid="uid://c7xmt6ebuxygn" path="res://resources/tilesets/interactive.tres" id="2_0k1bi"]
 [ext_resource type="TileSet" uid="uid://bu38kftqey1r" path="res://resources/tilesets/objects.tres" id="3_7j12q"]
 [ext_resource type="PackedScene" uid="uid://dqocl3uypytkq" path="res://scenes/objects/shop/shop_buy.tscn" id="3_gwf5r"]
-[ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/items/seed_1.tres" id="4_mayfw"]
-[ext_resource type="Resource" uid="uid://ophdtaeoc2m4" path="res://resources/items/plant_1_item.tres" id="5_qtkgj"]
+[ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/items/pumpkn_seeds.tres" id="4_mayfw"]
+[ext_resource type="Resource" uid="uid://ov4n0nt3w70h" path="res://resources/items/wheat_seeds.tres" id="5_vk6od"]
 [ext_resource type="PackedScene" uid="uid://cnece145536hi" path="res://scenes/objects/shop/shop_sell.tscn" id="6_x78ss"]
 [ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="7_bj3c1"]
+[ext_resource type="Resource" uid="uid://c5f7iop7pdps1" path="res://resources/items/carrot_item.tres" id="7_uyhg6"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4ibee"]
 normal = Vector2(1, 0)
@@ -50,7 +51,7 @@ y_sort_origin = 8
 
 [node name="Details" type="TileMapLayer" parent="Sorted"]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAdAAsAAQAwABgAAAAeAAsAAQA0ABgAAAAfAAsAAQA1ABgAAAAgAAsAAQA0ABgAAAAhAAsAAQA1ABgAAAAiAAsAAQA0ABgAAAAjAAsAAQA1ABgAAAAkAAsAAQA0ABgAAAAlAAsAAQAxABgAAAAjAA8AAQAyABgAAAAlAA8AAQAxABgAAAAkAA8AAQA0ABgAAAALAAcAAQAwABgAAAAMAAcAAQA0ABgAAAANAAcAAQA1ABgAAAAOAAcAAQA0ABgAAAAPAAcAAQA0ABgAAAAQAAcAAQA1ABgAAAARAAcAAQA0ABgAAAASAAcAAQAxABgAAAAuAAoAAQAwABgAAAAvAAoAAQA0ABgAAAAwAAoAAQA1ABgAAAAxAAoAAQA0ABgAAAAyAAoAAQA0ABgAAAAzAAoAAQA1ABgAAAA0AAoAAQA0ABgAAAA1AAoAAQAxABgAAAAsABcAAQAwABgAAAAtABcAAQA0ABgAAAAuABcAAQA1ABgAAAAvABcAAQA0ABgAAAAwABcAAQA0ABgAAAAxABcAAQA1ABgAAAAyABcAAQA0ABgAAAAzABcAAQAxABgAAAAQABIAAQAwABgAAAARABIAAQA0ABgAAAASABIAAQA1ABgAAAATABIAAQA0ABgAAAAUABIAAQA0ABgAAAAVABIAAQA1ABgAAAAWABIAAQA0ABgAAAAXABIAAQAxABgAAAAdAA8AAQAwABgAAAAeAA8AAQA0ABgAAAAfAA8AAQA0ABgAAAAgAA8AAQAzABgAAAAvABQAAQAXAAsAAAAwABQAAQAXAAsAAAAvABMAAQAXAAoAAAAwABMAAQAXAAoAAAAoABQAAQACAAgAAAApABQAAQAEAAgAAAAnABIAAQACAAkAAAAnABMAAQACAAsAAAAJABsAAQAPAAkAAAAIABwAAQAPAAkAAAAGAB0AAQAPAAkAAAANABwAAQAPAAkAAAAPAB4AAQAPAAkAAAATABoAAQAPAAkAAAATABkAAQAPAAkAAAAUABkAAQAPAAkAAAAVABgAAQAPAAkAAAAbABoAAQAPAAkAAAAoAB4AAQAPAAkAAAAoACAAAQAPAAkAAAAoACEAAQAPAAkAAAAcACIAAQAPAAkAAAAPACcAAQAPAAkAAAAMACcAAQAPAAkAAAALACcAAQAPAAkAAAAJACYAAQAPAAkAAAAHACQAAQAPAAkAAAARACcAAQAPAAkAAAAJABIAAQAPAAkAAAAIAAkAAQAPAAkAAAAIAAoAAQAPAAkAAAAWACAAAQAPAAkAAAAWACQAAQAPAAkAAAAXACMAAQAPAAkAAAAMACAAAQAOAAgAAAAMAB8AAQASAAUAAAARACEAAQAPAAkAAAARAB0AAQAPAAkAAAA0ABgAAQAPAAkAAAASABUAAQAPAAkAAAA=")
+tile_map_data = PackedByteArray("AAAdAAsAAQAwABgAAAAeAAsAAQA0ABgAAAAfAAsAAQA1ABgAAAAgAAsAAQA0ABgAAAAhAAsAAQA1ABgAAAAiAAsAAQA0ABgAAAAjAAsAAQA1ABgAAAAkAAsAAQA0ABgAAAAlAAsAAQAxABgAAAAjAA8AAQAyABgAAAAlAA8AAQAxABgAAAAkAA8AAQA0ABgAAAALAAcAAQAwABgAAAAMAAcAAQA0ABgAAAANAAcAAQA1ABgAAAAOAAcAAQA0ABgAAAAPAAcAAQA0ABgAAAAQAAcAAQA1ABgAAAARAAcAAQA0ABgAAAASAAcAAQAxABgAAAAuAAoAAQAwABgAAAAvAAoAAQA0ABgAAAAwAAoAAQA1ABgAAAAxAAoAAQA0ABgAAAAyAAoAAQA0ABgAAAAzAAoAAQA1ABgAAAA0AAoAAQA0ABgAAAA1AAoAAQAxABgAAAAsABcAAQAwABgAAAAtABcAAQA0ABgAAAAuABcAAQA1ABgAAAAvABcAAQA0ABgAAAAwABcAAQA0ABgAAAAxABcAAQA1ABgAAAAyABcAAQA0ABgAAAAzABcAAQAxABgAAAAQABIAAQAwABgAAAARABIAAQA0ABgAAAASABIAAQA1ABgAAAATABIAAQA0ABgAAAAUABIAAQA0ABgAAAAVABIAAQA1ABgAAAAWABIAAQA0ABgAAAAXABIAAQAxABgAAAAdAA8AAQAwABgAAAAeAA8AAQA0ABgAAAAfAA8AAQA0ABgAAAAgAA8AAQAzABgAAAAvABQAAQAXAAsAAAAwABQAAQAXAAsAAAAvABMAAQAXAAoAAAAwABMAAQAXAAoAAAAoABQAAQACAAgAAAApABQAAQAEAAgAAAAnABIAAQACAAkAAAAnABMAAQACAAsAAAAJABsAAQAPAAkAAAAIABwAAQAPAAkAAAAGAB0AAQAPAAkAAAANABwAAQAPAAkAAAAPAB4AAQAPAAkAAAATABoAAQAPAAkAAAATABkAAQAPAAkAAAAUABkAAQAPAAkAAAAVABgAAQAPAAkAAAAbABoAAQAPAAkAAAAoAB4AAQAPAAkAAAAoACAAAQAPAAkAAAAoACEAAQAPAAkAAAAcACIAAQAPAAkAAAAPACcAAQAPAAkAAAAMACcAAQAPAAkAAAALACcAAQAPAAkAAAAJACYAAQAPAAkAAAAHACQAAQAPAAkAAAARACcAAQAPAAkAAAAJABIAAQAPAAkAAAAIAAkAAQAPAAkAAAAIAAoAAQAPAAkAAAAWACAAAQAPAAkAAAAWACQAAQAPAAkAAAAXACMAAQAPAAkAAAAMACAAAQAOAAgAAAAMAB8AAQASAAUAAAARACEAAQAPAAkAAAARAB0AAQAPAAkAAAA0ABgAAQAPAAkAAAASABUAAQAPAAkAAAAvAA0AAgAGAAAAAAAwAA0AAgAGAAAAAAAvAB4AAgAEAAAAAAA=")
 tile_set = ExtResource("1_m8eg8")
 
 [node name="Trees" type="TileMapLayer" parent="Sorted"]
@@ -60,19 +61,15 @@ tile_set = ExtResource("3_7j12q")
 
 [node name="ShopBuy" parent="Sorted" instance=ExtResource("3_gwf5r")]
 position = Vector2(720, 232)
-item_for_sale = ExtResource("4_mayfw")
+item_for_sale = ExtResource("5_vk6od")
 
 [node name="ShopBuy2" parent="Sorted" instance=ExtResource("3_gwf5r")]
-position = Vector2(752, 232)
-item_for_sale = ExtResource("5_qtkgj")
+position = Vector2(768, 512)
+item_for_sale = ExtResource("4_mayfw")
 
 [node name="ShopBuy3" parent="Sorted" instance=ExtResource("3_gwf5r")]
-position = Vector2(768, 512)
-item_for_sale = ExtResource("5_qtkgj")
-
-[node name="ShopBuy4" parent="Sorted" instance=ExtResource("3_gwf5r")]
 position = Vector2(160, 488)
-item_for_sale = ExtResource("5_qtkgj")
+item_for_sale = ExtResource("7_uyhg6")
 
 [node name="ShopSell" parent="Sorted" instance=ExtResource("6_x78ss")]
 position = Vector2(688, 232)

@@ -1,20 +1,20 @@
 [gd_resource type="Resource" script_class="Plant" load_steps=6 format=3 uid="uid://b0g3fesjs5l6l"]
 
 [ext_resource type="Script" path="res://resources/plants/plant.gd" id="1_qu3dq"]
-[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="2_06nqa"]
+[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="2_wdbon"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eupep"]
-atlas = ExtResource("2_06nqa")
+atlas = ExtResource("2_wdbon")
 region = Rect2(145, 50, 16, 22)
 margin = Rect2(0, -6, 0, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n4h6v"]
-atlas = ExtResource("2_06nqa")
+atlas = ExtResource("2_wdbon")
 region = Rect2(145, 92, 16, 16)
 margin = Rect2(0, -6, 0, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_naq8g"]
-atlas = ExtResource("2_06nqa")
+atlas = ExtResource("2_wdbon")
 region = Rect2(145, 110, 16, 16)
 margin = Rect2(0, -6, 0, 0)
 filter_clip = true
@@ -25,7 +25,7 @@ sprite_seed = SubResource("AtlasTexture_n4h6v")
 sprite_mature = SubResource("AtlasTexture_eupep")
 sprite_withered = SubResource("AtlasTexture_naq8g")
 name = "Carrot"
-days_to_grow = 1
+days_to_grow = 2
 days_to_wither = 1
 product_resource_path = "res://resources/items/carrot_item.tres"
 product_amount = 2

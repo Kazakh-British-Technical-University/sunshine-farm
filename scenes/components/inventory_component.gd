@@ -10,8 +10,7 @@ var _empty = load("res://resources/items/empty.tres")
 
 func _ready():
 	items[_empty] = 1
-	items[load("res://resources/items/gold.tres")] = 99
-	items[load("res://resources/items/carrot_item.tres")] = 10
+	items[load("res://resources/items/gold.tres")] = 20
 	
 	current_item = _empty
 	current_item_changed.emit(current_item)

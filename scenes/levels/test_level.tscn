@@ -3,8 +3,8 @@
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilesets/environment.tres" id="1_p1kli"]
 [ext_resource type="TileSet" uid="uid://c7xmt6ebuxygn" path="res://resources/tilesets/interactive.tres" id="2_yvaxu"]
 [ext_resource type="PackedScene" uid="uid://dqocl3uypytkq" path="res://scenes/objects/shop/shop_buy.tscn" id="3_mumoy"]
-[ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/items/seed_1.tres" id="4_mh2rl"]
-[ext_resource type="Resource" uid="uid://ophdtaeoc2m4" path="res://resources/items/plant_1_item.tres" id="5_q1d67"]
+[ext_resource type="Resource" uid="uid://2fpp5nkcg57a" path="res://resources/items/pumpkn_seeds.tres" id="4_mh2rl"]
+[ext_resource type="Resource" uid="uid://ophdtaeoc2m4" path="res://resources/items/pumpkin_item.tres" id="5_q1d67"]
 [ext_resource type="PackedScene" uid="uid://cnece145536hi" path="res://scenes/objects/shop/shop_sell.tscn" id="6_ixoge"]
 [ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="7_8b3s0"]
 
