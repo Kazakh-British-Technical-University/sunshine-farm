@@ -3,7 +3,7 @@ extends Node2D
 
 @export var item_for_sale: InventoryItem
 
-var _gold = load("res://resources/item/gold.tres")
+var _gold = load("res://resources/items/gold.tres")
 
 
 # Called when the node enters the scene tree for the first time.

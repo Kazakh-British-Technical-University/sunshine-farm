@@ -1,4 +1,4 @@
 extends InventoryItem
 class_name SeedItem
 
-@export var grows_into: Plant
+@export var plant_resource_path: String

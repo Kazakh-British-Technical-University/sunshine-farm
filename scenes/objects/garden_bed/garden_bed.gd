@@ -31,7 +31,7 @@ func _plant_seed(origin):
 	if (!inventory.try_spend_item(current_item, 1)):
 		return
 		
-	plant = current_item.grows_into
+	plant = load(current_item.plant_resource_path)
 	$PlantSprite.texture = plant.sprite_seed
 	
 	
@@ -51,7 +51,8 @@ func _collect_plant(origin):
 	if (inventory == null):
 		return
 		
-	inventory.add_item(plant.product, plant.product_amount)
+	var product = load(plant.product_resource_path)
+	inventory.add_item(product, plant.product_amount)
 	
 	
 func _on_day_ended():

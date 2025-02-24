@@ -1,7 +1,6 @@
-[gd_resource type="Resource" script_class="Plant" load_steps=7 format=3 uid="uid://cc4xyxyqralwx"]
+[gd_resource type="Resource" script_class="Plant" load_steps=6 format=3 uid="uid://cc4xyxyqralwx"]
 
 [ext_resource type="Script" path="res://resources/plants/plant.gd" id="1_h18r1"]
-[ext_resource type="Resource" uid="uid://ophdtaeoc2m4" path="res://resources/items/plant_1_item.tres" id="1_nmsr7"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/roguelikeSheet_transparent.png" id="2_22cmv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dkfab"]
@@ -24,5 +23,5 @@ sprite_withered = SubResource("AtlasTexture_p18s5")
 name = "Plant 1"
 days_to_grow = 1
 days_to_wither = 1
-product = ExtResource("1_nmsr7")
+product_resource_path = "res://resources/items/plant_1_item.tres"
 product_amount = 1

@@ -1,8 +1,8 @@
 extends Node2D
 
 
-var _gold = load("res://resources/item/gold.tres")
-var _empty = load("res://resources/item/empty.tres")
+var _gold = load("res://resources/items/gold.tres")
+var _empty = load("res://resources/items/empty.tres")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

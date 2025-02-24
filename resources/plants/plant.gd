@@ -7,5 +7,5 @@ class_name Plant
 @export var name: String
 @export var days_to_grow: int
 @export var days_to_wither: int
-@export var product: InventoryItem
+@export var product_resource_path: String
 @export var product_amount: int

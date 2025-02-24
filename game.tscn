@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://du3mtxnk4scd8" path="res://scenes/systems/time_manager.tscn" id="1_onc1v"]
 [ext_resource type="Script" path="res://scenes/systems/day_cycle_visuals.gd" id="2_4x7bl"]
-[ext_resource type="PackedScene" uid="uid://cortj6bsre7iy" path="res://scenes/ui/current_item_ui.tscn" id="3_breiy"]
+[ext_resource type="PackedScene" uid="uid://kbw1k1dep62t" path="res://scenes/ui/ui.tscn" id="3_7e3lt"]
 [ext_resource type="PackedScene" uid="uid://bcwgp3lqy875b" path="res://scenes/levels/main_level.tscn" id="4_5yyoq"]
 
 [node name="Game" type="Node2D"]
@@ -14,8 +14,6 @@ script = ExtResource("2_4x7bl")
 day_color = Color(1, 1, 1, 1)
 evening_color = Color(0.74902, 0.341176, 0.196078, 1)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="CurrentItemUI" parent="CanvasLayer" instance=ExtResource("3_breiy")]
+[node name="UI" parent="." instance=ExtResource("3_7e3lt")]
 
 [node name="MainLevel" parent="." instance=ExtResource("4_5yyoq")]

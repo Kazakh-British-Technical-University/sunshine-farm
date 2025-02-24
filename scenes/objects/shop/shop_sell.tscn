@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/objects/shop/shop_sell.gd" id="1_bci3b"]
 [ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_dntkg"]
 [ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="2_fbv38"]
-[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilemaps/environment.tres" id="3_u6x43"]
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilesets/environment.tres" id="3_u6x43"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/roguelikeSheet_transparent.png" id="4_nwos3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfn3o"]
