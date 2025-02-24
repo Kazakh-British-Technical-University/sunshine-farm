@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://dqocl3uypytkq"]
 
 [ext_resource type="Script" path="res://scenes/objects/shop/shop_buy.gd" id="1_5q0yu"]
-[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="2_kcpc2"]
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilemaps/environment.tres" id="2_kcpc2"]
 [ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_mnvbm"]
 [ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="3_hlfp1"]
-[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://roguelikeSheet_transparent.png" id="4_8idif"]
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/roguelikeSheet_transparent.png" id="4_8idif"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_whi0w"]
 atlas = ExtResource("3_hlfp1")

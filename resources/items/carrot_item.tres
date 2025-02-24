@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=4 format=3 uid="uid://c5f7iop7pdps1"]
+
+[ext_resource type="Script" path="res://resources/items/inventory_item.gd" id="1_m7lu2"]
+[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/tilemap_packed.png" id="2_7oub0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eupep"]
+atlas = ExtResource("2_7oub0")
+region = Rect2(145, 50, 16, 22)
+margin = Rect2(0, -6, 0, 0)
+
+[resource]
+script = ExtResource("1_m7lu2")
+sprite = SubResource("AtlasTexture_eupep")
+name = "Carrot"
+price = 3

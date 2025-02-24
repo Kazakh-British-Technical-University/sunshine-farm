@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=4 uid="uid://y122rmo211q5"]
 
-[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://environment.tres" id="1_p5tes"]
+[ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilemaps/environment.tres" id="1_p5tes"]
 
 [node name="House1" type="Node2D"]
 y_sort_enabled = true
@@ -28,4 +28,3 @@ position = Vector2(-8, 8)
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAACAP//AQAxABgAAAACAP3/AQAxABgAAAACAP7/AQApAAoAAAA=")
 tile_set = ExtResource("1_p5tes")
-y_sort_origin = 8

@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="Plant" load_steps=7 format=3 uid="uid://b0g3fesjs5l6l"]
+
+[ext_resource type="Resource" uid="uid://c5f7iop7pdps1" path="res://resources/items/carrot_item.tres" id="1_3q12s"]
+[ext_resource type="Script" path="res://resources/plants/plant.gd" id="1_qu3dq"]
+[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/tilemap_packed.png" id="2_06nqa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eupep"]
+atlas = ExtResource("2_06nqa")
+region = Rect2(145, 50, 16, 22)
+margin = Rect2(0, -6, 0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4h6v"]
+atlas = ExtResource("2_06nqa")
+region = Rect2(145, 92, 16, 16)
+margin = Rect2(0, -6, 0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_naq8g"]
+atlas = ExtResource("2_06nqa")
+region = Rect2(145, 110, 16, 16)
+margin = Rect2(0, -6, 0, 0)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_qu3dq")
+sprite_seed = SubResource("AtlasTexture_n4h6v")
+sprite_mature = SubResource("AtlasTexture_eupep")
+sprite_withered = SubResource("AtlasTexture_naq8g")
+name = "Carrot"
+days_to_grow = 1
+days_to_wither = 1
+product = ExtResource("1_3q12s")
+product_amount = 2
