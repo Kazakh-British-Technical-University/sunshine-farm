@@ -1,13 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://duiwwkprs8y16"]
+[gd_scene load_steps=6 format=3 uid="uid://duiwwkprs8y16"]
 
 [ext_resource type="PackedScene" uid="uid://du3mtxnk4scd8" path="res://scenes/systems/time_manager.tscn" id="1_onc1v"]
 [ext_resource type="Script" path="res://scenes/systems/day_cycle_visuals.gd" id="2_4x7bl"]
+[ext_resource type="PackedScene" uid="uid://fp046x7gej7k" path="res://scenes/systems/sfx.tscn" id="2_iq3h7"]
 [ext_resource type="PackedScene" uid="uid://kbw1k1dep62t" path="res://scenes/ui/ui.tscn" id="3_7e3lt"]
 [ext_resource type="PackedScene" uid="uid://bcwgp3lqy875b" path="res://scenes/levels/main_level.tscn" id="4_5yyoq"]
 
 [node name="Game" type="Node2D"]
 
 [node name="TimeManager" parent="." instance=ExtResource("1_onc1v")]
+
+[node name="SFX" parent="." instance=ExtResource("2_iq3h7")]
 
 [node name="DayCycleVisuals" type="CanvasModulate" parent="."]
 script = ExtResource("2_4x7bl")

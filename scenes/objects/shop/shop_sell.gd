@@ -3,6 +3,7 @@ extends Node2D
 
 var _gold = load("res://resources/items/gold.tres")
 var _empty = load("res://resources/items/empty.tres")
+var _sound_effect = load("res://assets/audio/clothBelt2.ogg")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,4 +20,5 @@ func _on_interacted(origin):
 		return
 		
 	if (inventory.try_spend_item(current_item, 1)):
+		Globals.sfx.play_effect(_sound_effect)
 		inventory.add_item(_gold, current_item.price)

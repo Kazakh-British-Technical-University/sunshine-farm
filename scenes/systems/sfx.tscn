@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fp046x7gej7k"]
+
+[ext_resource type="Script" path="res://scenes/systems/sfx.gd" id="1_mj7is"]
+
+[node name="SFX" type="AudioStreamPlayer"]
+script = ExtResource("1_mj7is")

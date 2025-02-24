@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://b7sobpxxggyvg"]
 
-[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/tilemap_packed.png" id="1_lm2xu"]
-[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/roguelikeSheet_transparent.png" id="2_xrut4"]
+[ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="1_lm2xu"]
+[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/textures/roguelikeSheet_transparent.png" id="2_xrut4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y7pgv"]
 texture = ExtResource("1_lm2xu")
