@@ -4,8 +4,8 @@
 
 [node name="TimeManager" type="Node"]
 script = ExtResource("1_341sp")
-day_duration = 50.0
-evening_duration = 10.0
+day_duration = 25.0
+evening_duration = 8.0
 night_duration = 3.0
 
 [node name="Timer" type="Timer" parent="."]
