@@ -16,7 +16,7 @@ func _on_interacted(origin):
 		return
 		
 	var current_item = inventory.current_item
-	if (current_item == _empty && current_item != _gold):
+	if (current_item == _empty || current_item == _gold):
 		return
 		
 	if (inventory.try_spend_item(current_item, 1)):
