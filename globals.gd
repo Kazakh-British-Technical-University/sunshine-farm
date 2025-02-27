@@ -1,5 +1,5 @@
 extends Node
 
-var player: Player
+var inventory: Inventory
 var time_manager: TimeManager
 var sfx: SFX

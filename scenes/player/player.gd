@@ -7,10 +7,6 @@ class_name Player
 
 var _is_control_locked = false;
 var _spawn_point;
-
-
-func _enter_tree():
-	Globals.player = self
 	
 	
 func _ready():
@@ -31,19 +27,18 @@ func _on_day_started():
 func _process(_delta):
 	if (_is_control_locked):
 		return
-		
-	if ($InventoryComponent != null):
-		_switch_item()
+	
 	if ($InteractorComponent != null):
 		_interact()
 	_move()
+	_switch_item()
 
 
 func _switch_item():
 	if (Input.is_action_just_pressed("switch_item_left")):
-		$InventoryComponent.switch_item(-1)
+		Globals.inventory.switch_item(-1)
 	elif (Input.is_action_just_pressed("switch_item_right")):
-		$InventoryComponent.switch_item(1)
+		Globals.inventory.switch_item(1)
 
 
 func _interact():

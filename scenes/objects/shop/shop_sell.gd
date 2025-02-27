@@ -11,7 +11,7 @@ func _ready():
 	
 	
 func _on_interacted(origin):
-	var inventory = origin.get_node("InventoryComponent")
+	var inventory = Globals.inventory
 	if (inventory == null):
 		return
 		

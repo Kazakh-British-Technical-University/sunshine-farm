@@ -15,13 +15,13 @@ func _ready():
 
 func _on_interacted(origin):
 	if (plant == null):
-		_plant_seed(origin)
+		_plant_seed()
 	else:
-		_remove_plant(origin)
+		_remove_plant()
 	
 	
-func _plant_seed(origin):
-	var inventory = origin.get_node("InventoryComponent")
+func _plant_seed():
+	var inventory = Globals.inventory
 	if (inventory == null):
 		return
 	
@@ -37,11 +37,11 @@ func _plant_seed(origin):
 	Globals.sfx.play_effect(_sound_effect)
 	
 	
-func _remove_plant(origin):
+func _remove_plant():
 	if (grow_phase < plant.days_to_grow || grow_phase > plant.days_to_grow + plant.days_to_wither):
 		print("plant destroyed")
 	else:
-		_collect_plant(origin)
+		_collect_plant()
 		
 	plant = null
 	$PlantSprite.texture = null
@@ -49,8 +49,8 @@ func _remove_plant(origin):
 	Globals.sfx.play_effect(_sound_effect)
 
 
-func _collect_plant(origin):
-	var inventory = origin.get_node("InventoryComponent")
+func _collect_plant():
+	var inventory = Globals.inventory
 	if (inventory == null):
 		return
 		

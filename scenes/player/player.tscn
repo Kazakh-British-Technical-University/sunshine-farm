@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bulw26oj5t788"]
+[gd_scene load_steps=8 format=3 uid="uid://bulw26oj5t788"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_05p8g"]
 [ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="1_pkxiw"]
 [ext_resource type="PackedScene" uid="uid://d0506gv1twh14" path="res://scenes/components/interactor_component.tscn" id="3_hys0g"]
-[ext_resource type="Script" path="res://scenes/components/inventory_component.gd" id="4_4s1gc"]
 [ext_resource type="Script" path="res://scenes/player/smooth_follower.gd" id="5_s18gg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibbx3"]
@@ -39,9 +38,6 @@ offset = Vector2(0, -8)
 
 [node name="InteractorComponent" parent="." instance=ExtResource("3_hys0g")]
 position = Vector2(0, -6)
-
-[node name="InventoryComponent" type="Node" parent="."]
-script = ExtResource("4_4s1gc")
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
 zoom = Vector2(4, 4)

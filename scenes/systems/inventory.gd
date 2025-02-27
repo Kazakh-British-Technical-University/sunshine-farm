@@ -1,4 +1,5 @@
 extends Node
+class_name Inventory
 
 signal current_item_changed(item: InventoryItem)
 signal items_updated(item: InventoryItem, new_amount: int)
@@ -6,13 +7,17 @@ signal items_updated(item: InventoryItem, new_amount: int)
 var items: Dictionary
 var current_item: InventoryItem
 
-var _empty = load("res://resources/items/empty.tres")
+var empty_item = load("res://resources/items/empty.tres")
+var gold_item = load("res://resources/items/gold.tres")
+
+func _enter_tree():
+	Globals.inventory = self
 
 func _ready():
-	items[_empty] = 1
-	items[load("res://resources/items/gold.tres")] = 20
+	items[empty_item] = 1
+	items[gold_item] = 20
 	
-	current_item = _empty
+	current_item = empty_item
 	current_item_changed.emit(current_item)
 
 
