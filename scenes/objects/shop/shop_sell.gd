@@ -1,8 +1,5 @@
 extends Node2D
 
-
-var _gold = load("res://resources/items/gold.tres")
-var _empty = load("res://resources/items/empty.tres")
 var _sound_effect = load("res://assets/audio/clothBelt2.ogg")
 
 # Called when the node enters the scene tree for the first time.
@@ -16,9 +13,9 @@ func _on_interacted(origin):
 		return
 		
 	var current_item = inventory.current_item
-	if (current_item == _empty || current_item == _gold):
+	if (current_item == Globals.inventory.empty_item || current_item == Globals.inventory.gold_item):
 		return
 		
 	if (inventory.try_spend_item(current_item, 1)):
 		Globals.sfx.play_effect(_sound_effect)
-		inventory.add_item(_gold, current_item.price)
+		inventory.add_item(Globals.inventory.gold_item, current_item.price)
