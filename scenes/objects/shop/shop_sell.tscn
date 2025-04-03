@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cnece145536hi"]
+[gd_scene load_steps=13 format=3 uid="uid://cnece145536hi"]
 
 [ext_resource type="Script" uid="uid://c6mxwx10qyuyv" path="res://scenes/objects/shop/shop_sell.gd" id="1_bci3b"]
 [ext_resource type="PackedScene" uid="uid://dnk3n5vinicby" path="res://scenes/components/interactable_component.tscn" id="2_dntkg"]
 [ext_resource type="Texture2D" uid="uid://c1t7xbjcdv2p" path="res://scenes/player/char.png" id="2_fbv38"]
 [ext_resource type="TileSet" uid="uid://b7sobpxxggyvg" path="res://resources/tilesets/environment.tres" id="3_u6x43"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/textures/roguelikeSheet_transparent.png" id="4_nwos3"]
+[ext_resource type="PackedScene" uid="uid://clli4tdpr75o5" path="res://scenes/components/dialogue_component.tscn" id="5_ch8xv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfn3o"]
 atlas = ExtResource("2_fbv38")
@@ -17,6 +18,9 @@ region = Rect2(272, 0, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_4kwte"]
 atlas = ExtResource("4_nwos3")
 region = Rect2(765, 187, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6nx6"]
+size = Vector2(26, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_clbj4"]
 size = Vector2(26, 11)
@@ -50,6 +54,15 @@ position = Vector2(21, -20)
 scale = Vector2(0.5, 0.5)
 texture = SubResource("AtlasTexture_4kwte")
 
+[node name="DialogueComponent" parent="." instance=ExtResource("5_ch8xv")]
+
+[node name="CollisionShape2D" parent="DialogueComponent" index="0"]
+position = Vector2(16, -2.5)
+shape = SubResource("RectangleShape2D_u6nx6")
+
+[node name="DialogueBoxOrigin" parent="DialogueComponent" index="1"]
+position = Vector2(16, -39)
+
 [node name="InteractableComponent" parent="." instance=ExtResource("2_dntkg")]
 position = Vector2(16, -8)
 
@@ -63,4 +76,5 @@ shape = SubResource("RectangleShape2D_clbj4")
 position = Vector2(16, -5.5)
 shape = SubResource("RectangleShape2D_sqcaj")
 
+[editable path="DialogueComponent"]
 [editable path="InteractableComponent"]

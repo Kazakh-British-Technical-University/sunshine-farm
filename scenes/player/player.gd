@@ -38,7 +38,7 @@ func _switch_item():
 	if (Input.is_action_just_pressed("switch_item_left")):
 		Globals.inventory.switch_item(-1)
 	elif (Input.is_action_just_pressed("switch_item_right")):
-		Globals.inventory.switch_item(1)
+		Globals.inventory.switch_item(1)	
 
 
 func _interact():
