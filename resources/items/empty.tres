@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://bhjhtue6x0753"]
 
-[ext_resource type="Script" path="res://resources/items/inventory_item.gd" id="1_5sjx4"]
+[ext_resource type="Script" uid="uid://bt0agmmv67ryf" path="res://resources/items/inventory_item.gd" id="1_5sjx4"]
 [ext_resource type="Texture2D" uid="uid://c0j7tlyy08im7" path="res://scenes/ui/empty_hand.png" id="2_wnmaq"]
 
 [resource]

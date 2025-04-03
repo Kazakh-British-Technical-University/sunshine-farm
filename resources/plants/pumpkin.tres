@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Plant" load_steps=7 format=3 uid="uid://cc4xyxyqralwx"]
 
-[ext_resource type="Script" path="res://resources/plants/plant.gd" id="1_6mi0s"]
+[ext_resource type="Script" uid="uid://x68d8yova0k7" path="res://resources/plants/plant.gd" id="1_6mi0s"]
 [ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="2_qdv5w"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/textures/roguelikeSheet_transparent.png" id="3_uvvg3"]
 

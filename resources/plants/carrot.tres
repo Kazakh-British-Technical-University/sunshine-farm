@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Plant" load_steps=6 format=3 uid="uid://b0g3fesjs5l6l"]
 
-[ext_resource type="Script" path="res://resources/plants/plant.gd" id="1_qu3dq"]
+[ext_resource type="Script" uid="uid://x68d8yova0k7" path="res://resources/plants/plant.gd" id="1_qu3dq"]
 [ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="2_wdbon"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eupep"]
