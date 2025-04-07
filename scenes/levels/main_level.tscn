@@ -74,6 +74,9 @@ item_for_sale = ExtResource("7_uyhg6")
 [node name="ShopSell" parent="Sorted" instance=ExtResource("6_x78ss")]
 position = Vector2(688, 232)
 
+[node name="ShopSell2" parent="Sorted" instance=ExtResource("6_x78ss")]
+position = Vector2(800, 360)
+
 [node name="Player" parent="Sorted" instance=ExtResource("7_bj3c1")]
 position = Vector2(400, 208)
 
