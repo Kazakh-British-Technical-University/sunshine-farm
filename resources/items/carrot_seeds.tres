@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SeedItem" load_steps=4 format=3 uid="uid://d2ucn2lttq5ut"]
+
+[ext_resource type="Script" uid="uid://6wxufumhd66u" path="res://resources/items/seed_item.gd" id="1_33hg5"]
+[ext_resource type="Texture2D" uid="uid://kfhlyrqwl2m0" path="res://assets/textures/seeds..png" id="2_33hg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab2fg"]
+atlas = ExtResource("2_33hg5")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_33hg5")
+plant_resource_path = "res://resources/plants/carrot.tres"
+sprite = SubResource("AtlasTexture_ab2fg")
+name = "Seeds"
+price = 2

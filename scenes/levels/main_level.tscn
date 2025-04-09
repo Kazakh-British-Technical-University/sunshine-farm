@@ -8,7 +8,7 @@
 [ext_resource type="Resource" uid="uid://ov4n0nt3w70h" path="res://resources/items/wheat_seeds.tres" id="5_vk6od"]
 [ext_resource type="PackedScene" uid="uid://cnece145536hi" path="res://scenes/objects/shop/shop_sell.tscn" id="6_x78ss"]
 [ext_resource type="PackedScene" uid="uid://bulw26oj5t788" path="res://scenes/player/player.tscn" id="7_bj3c1"]
-[ext_resource type="Resource" uid="uid://c5f7iop7pdps1" path="res://resources/items/carrot_item.tres" id="7_uyhg6"]
+[ext_resource type="Resource" uid="uid://d2ucn2lttq5ut" path="res://resources/items/carrot_seeds.tres" id="7_kwk8y"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4ibee"]
 normal = Vector2(1, 0)
@@ -34,6 +34,7 @@ tile_map_data = PackedByteArray("AAAJAAkAAQAHAAkAAAAJAAoAAQAHAAoAAAAJAAsAAQAHAAo
 tile_set = ExtResource("1_m8eg8")
 
 [node name="Details" type="TileMapLayer" parent="Flat"]
+tile_map_data = PackedByteArray("AAAMAB0AAgAIAAMAAAANAB0AAgAIAAMAAAA=")
 tile_set = ExtResource("1_m8eg8")
 
 [node name="Interactive" type="TileMapLayer" parent="Flat"]
@@ -69,7 +70,7 @@ item_for_sale = ExtResource("4_mayfw")
 
 [node name="ShopBuy3" parent="Sorted" instance=ExtResource("3_gwf5r")]
 position = Vector2(160, 488)
-item_for_sale = ExtResource("7_uyhg6")
+item_for_sale = ExtResource("7_kwk8y")
 
 [node name="ShopSell" parent="Sorted" instance=ExtResource("6_x78ss")]
 position = Vector2(688, 232)

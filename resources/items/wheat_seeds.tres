@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="SeedItem" load_steps=4 format=3 uid="uid://ov4n0nt3w70h"]
 
 [ext_resource type="Script" uid="uid://6wxufumhd66u" path="res://resources/items/seed_item.gd" id="1_03w6n"]
-[ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/textures/roguelikeSheet_transparent.png" id="2_si8g1"]
+[ext_resource type="Texture2D" uid="uid://kfhlyrqwl2m0" path="res://assets/textures/seeds..png" id="2_ed8gk"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x01e8"]
-atlas = ExtResource("2_si8g1")
-region = Rect2(765, 170, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kphfd"]
+atlas = ExtResource("2_ed8gk")
+region = Rect2(0, 0, 16, 16)
 
 [resource]
 script = ExtResource("1_03w6n")
 plant_resource_path = "res://resources/plants/wheat.tres"
-sprite = SubResource("AtlasTexture_x01e8")
-name = "Wheat seeds"
+sprite = SubResource("AtlasTexture_kphfd")
+name = "Seeds"
 price = 1
