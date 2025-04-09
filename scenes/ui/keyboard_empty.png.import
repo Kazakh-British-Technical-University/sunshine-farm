@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kfhlyrqwl2m0"
-path="res://.godot/imported/seeds..png-dfa913983733fb7bca50d8cdb8819ebf.ctex"
+uid="uid://dyxx2lxb44lld"
+path="res://.godot/imported/keyboard_empty.png-169a6d8bf47e54300fbf9a9a57c11279.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/seeds..png"
-dest_files=["res://.godot/imported/seeds..png-dfa913983733fb7bca50d8cdb8819ebf.ctex"]
+source_file="res://scenes/ui/keyboard_empty.png"
+dest_files=["res://.godot/imported/keyboard_empty.png-169a6d8bf47e54300fbf9a9a57c11279.ctex"]
 
 [params]
 
