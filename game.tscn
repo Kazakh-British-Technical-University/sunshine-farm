@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://kbw1k1dep62t" path="res://scenes/ui/ui.tscn" id="3_7e3lt"]
 [ext_resource type="Script" uid="uid://cg85j6h5ty4ki" path="res://scenes/systems/inventory.gd" id="3_kxtjo"]
 [ext_resource type="PackedScene" uid="uid://bcwgp3lqy875b" path="res://scenes/levels/main_level.tscn" id="4_5yyoq"]
-[ext_resource type="PackedScene" uid="uid://da22qgw14xppq" path="res://scenes/systems/day_cycle_visuals.tscn" id="4_ryrav"]
+[ext_resource type="PackedScene" path="res://scenes/systems/day_cycle_visuals.tscn" id="4_ryrav"]
 
 [node name="Game" type="Node2D"]
 

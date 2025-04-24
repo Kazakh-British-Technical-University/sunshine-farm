@@ -11,7 +11,7 @@ func _ready():
 	$InteractableComponent.interacted.connect(_on_interacted)
 
 
-func _on_interacted(origin):
+func _on_interacted():
 	if (plant == null):
 		_plant_seed()
 	else:

@@ -43,7 +43,7 @@ func _switch_item():
 
 func _interact():
 	if (Input.is_action_just_pressed("interact")):
-		$InteractorComponent.interact(self)
+		$InteractorComponent.interact()
 
 
 func _move():	

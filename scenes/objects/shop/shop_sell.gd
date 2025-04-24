@@ -7,7 +7,7 @@ func _ready():
 	$InteractableComponent.interacted.connect(_on_interacted)
 	
 	
-func _on_interacted(origin):
+func _on_interacted():
 	var current_item = Inventory.current_item
 	if (current_item == Inventory.empty_item || current_item == Inventory.gold_item):
 		return

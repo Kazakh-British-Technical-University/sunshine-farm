@@ -27,10 +27,10 @@ func _process(_delta):
 	_highlight.global_rotation = 0
 
 
-func interact(origin):
+func interact():
 	if (len(_interactable_list) == 0):
 		return
-	_get_priority_interactable().interact(origin)
+	_get_priority_interactable().interact()
 
 
 func _get_priority_interactable():
