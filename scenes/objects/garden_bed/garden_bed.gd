@@ -8,9 +8,7 @@ var _sound_effect = load("res://assets/audio/handleSmallLeather2.ogg")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	TimeManager.day_started.connect(_on_day_ended)
-	
-	if ($InteractableComponent != null):
-		$InteractableComponent.interacted.connect(_on_interacted)
+	$InteractableComponent.interacted.connect(_on_interacted)
 
 
 func _on_interacted(origin):

@@ -26,6 +26,6 @@ func _on_night_stared():
 func _interpolate_color(start_color, target_color):
 	var t = 0
 	while (t < 1):
-		color = lerp(start_color, target_color, smoothstep(0, 1, t))
+		color = lerp(start_color, target_color, t)
 		t += get_process_delta_time()
 		await get_tree().process_frame

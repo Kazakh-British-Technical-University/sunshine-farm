@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://da22qgw14xppq"]
+
+[ext_resource type="Script" uid="uid://g4mcxi83jnta" path="res://scenes/systems/day_cycle_visuals.gd" id="1_ejw78"]
+
+[node name="DayCycleVisuals" type="CanvasModulate"]
+script = ExtResource("1_ejw78")
+day_color = Color(1, 1, 1, 1)
+evening_color = Color(0.74902, 0.341176, 0.196078, 1)
