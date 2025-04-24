@@ -18,7 +18,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://globals.gd"
+Inventory="*res://scenes/systems/inventory.tscn"
+SFX="*res://scenes/systems/sfx.tscn"
+TimeManager="*res://scenes/systems/time_manager.tscn"
 
 [display]
 

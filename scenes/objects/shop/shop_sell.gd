@@ -8,14 +8,10 @@ func _ready():
 	
 	
 func _on_interacted(origin):
-	var inventory = Globals.inventory
-	if (inventory == null):
+	var current_item = Inventory.current_item
+	if (current_item == Inventory.empty_item || current_item == Inventory.gold_item):
 		return
 		
-	var current_item = inventory.current_item
-	if (current_item == Globals.inventory.empty_item || current_item == Globals.inventory.gold_item):
-		return
-		
-	if (inventory.try_spend_item(current_item, 1)):
-		Globals.sfx.play_effect(_sound_effect)
-		inventory.add_item(Globals.inventory.gold_item, current_item.price)
+	if (Inventory.try_spend_item(current_item, 1)):
+		SFX.play_effect(_sound_effect)
+		Inventory.add_item(Inventory.gold_item, current_item.price)

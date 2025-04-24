@@ -12,11 +12,7 @@ func _ready():
 	$Visuals/ItemSprite.texture = item_for_sale.sprite
 	
 	
-func _on_interacted(origin):
-	var inventory = Globals.inventory
-	if (inventory == null):
-		return
-		
-	if (inventory.try_spend_item(Globals.inventory.gold_item, item_for_sale.price)):
-		Globals.sfx.play_effect(_sound_effect)
-		inventory.add_item(item_for_sale, 1)
+func _on_interacted(origin):		
+	if (Inventory.try_spend_item(Inventory.gold_item, item_for_sale.price)):
+		SFX.play_effect(_sound_effect)
+		Inventory.add_item(item_for_sale, 1)

@@ -1,5 +1,4 @@
 extends Node
-class_name TimeManager
 
 signal day_started
 signal evening_started
@@ -10,9 +9,6 @@ signal night_started
 @export var night_duration: float
 
 var _timer: Timer
-
-func _enter_tree():
-	Globals.time_manager = self
 	
 	
 func _ready():
