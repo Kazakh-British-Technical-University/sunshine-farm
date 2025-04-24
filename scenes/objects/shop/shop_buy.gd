@@ -3,8 +3,6 @@ extends Node2D
 
 @export var item_for_sale: InventoryItem
 
-var _sound_effect = load("res://assets/audio/handleCoins.ogg")
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,5 +12,5 @@ func _ready():
 	
 func _on_interacted():		
 	if (Inventory.try_spend_item(Inventory.gold_item, item_for_sale.price)):
-		SFX.play_effect(_sound_effect)
+		SFX.play_effect(SFX.BUY)
 		Inventory.add_item(item_for_sale, 1)

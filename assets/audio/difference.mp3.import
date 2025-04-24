@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/difference.mp3-3342a228bb31e644bf4c608376d1cc
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

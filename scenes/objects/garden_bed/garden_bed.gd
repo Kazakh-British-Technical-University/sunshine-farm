@@ -2,7 +2,6 @@ extends Node2D
 
 var plant: Plant
 var grow_phase: int
-var _sound_effect = load("res://assets/audio/handleSmallLeather2.ogg")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -28,7 +27,7 @@ func _plant_seed():
 		
 	plant = load(current_item.plant_resource_path)
 	$PlantSprite.texture = plant.sprite_seed
-	SFX.play_effect(_sound_effect)
+	SFX.play_effect(SFX.INTERACT)
 	
 	
 func _remove_plant():
@@ -40,7 +39,7 @@ func _remove_plant():
 	plant = null
 	$PlantSprite.texture = null
 	grow_phase = 0
-	SFX.play_effect(_sound_effect)
+	SFX.play_effect(SFX.INTERACT)
 
 
 func _collect_plant():
