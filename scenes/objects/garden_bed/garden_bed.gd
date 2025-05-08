@@ -42,7 +42,7 @@ func _remove_plant():
 	plant = null
 	$PlantSprite.texture = null
 	grow_phase = 0
-	Globals.sfx.play_effect(_sound_effect)
+	SFX.play_effect(_sound_effect)
 
 
 func _collect_plant():
