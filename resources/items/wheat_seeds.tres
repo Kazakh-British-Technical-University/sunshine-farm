@@ -13,3 +13,4 @@ plant_resource_path = "res://resources/plants/wheat.tres"
 sprite = SubResource("AtlasTexture_kphfd")
 name = "Seeds"
 price = 1
+rarity = 1

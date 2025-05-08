@@ -22,6 +22,7 @@ Inventory="*res://scenes/systems/inventory.tscn"
 SFX="*res://scenes/systems/sfx.tscn"
 TimeManager="*res://scenes/systems/time_manager.tscn"
 Globals="*res://globals.gd"
+Colors="*res://scenes/systems/colors.tscn"
 
 [display]
 

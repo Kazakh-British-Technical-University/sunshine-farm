@@ -12,6 +12,8 @@ func _ready():
 func _on_current_item_changed(item: InventoryItem):
 	$Texture.texture = item.sprite
 	$ItemName.text = item.name
+	$RarityBorder.get_theme_stylebox("panel").border_color = Colors.rarity_colors[item.rarity]
+	print(Colors.rarity_colors[item.rarity])
 	
 	if (item.name == "Empty"):
 		$Amount.text = ""

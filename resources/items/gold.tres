@@ -12,3 +12,4 @@ script = ExtResource("1_x5r24")
 sprite = SubResource("AtlasTexture_bskdg")
 name = "Gold"
 price = 1
+rarity = 0

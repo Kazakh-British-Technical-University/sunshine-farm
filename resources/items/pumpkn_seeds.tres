@@ -13,3 +13,4 @@ plant_resource_path = "res://resources/plants/pumpkin.tres"
 sprite = SubResource("AtlasTexture_obp72")
 name = "Seeds"
 price = 2
+rarity = 2

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqio5njydaln1"]
+
+[ext_resource type="Script" uid="uid://d3ghk02rn1c40" path="res://scenes/systems/colors.gd" id="1_idta6"]
+
+[node name="Colors" type="Node"]
+script = ExtResource("1_idta6")
+rarity_common = Color(0, 0, 0, 0)
+rarity_uncommon = Color(0.05, 0.75, 0, 1)
+rarity_rare = Color(0, 0.433333, 1, 1)
+rarity_unique = Color(1, 0.983333, 0, 1)

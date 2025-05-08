@@ -13,3 +13,4 @@ script = ExtResource("1_1h73g")
 sprite = SubResource("AtlasTexture_eupep")
 name = "Carrot"
 price = 3
+rarity = 2

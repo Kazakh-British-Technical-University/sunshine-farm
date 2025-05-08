@@ -12,3 +12,4 @@ script = ExtResource("1_a1slo")
 sprite = SubResource("AtlasTexture_1obps")
 name = "Wheat"
 price = 2
+rarity = 1

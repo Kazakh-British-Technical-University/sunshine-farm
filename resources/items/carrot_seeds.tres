@@ -13,3 +13,4 @@ plant_resource_path = "res://resources/plants/carrot.tres"
 sprite = SubResource("AtlasTexture_ab2fg")
 name = "Seeds"
 price = 2
+rarity = 2
