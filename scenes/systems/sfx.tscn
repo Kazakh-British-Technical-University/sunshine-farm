@@ -3,4 +3,5 @@
 [ext_resource type="Script" uid="uid://bcakondlnse8u" path="res://scenes/systems/sfx.gd" id="1_mj7is"]
 
 [node name="SFX" type="AudioStreamPlayer"]
+volume_db = -15.0
 script = ExtResource("1_mj7is")
