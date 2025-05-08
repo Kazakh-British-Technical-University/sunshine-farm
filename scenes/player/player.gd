@@ -11,8 +11,8 @@ var _spawn_point;
 	
 func _ready():
 	_spawn_point = global_position
-	Globals.time_manager.night_started.connect(_on_night_started)
-	Globals.time_manager.day_started.connect(_on_day_started)
+	TimeManager.night_started.connect(_on_night_started)
+	TimeManager.day_started.connect(_on_day_started)
 
 
 func _on_night_started():
@@ -36,9 +36,9 @@ func _process(_delta):
 
 func _switch_item():
 	if (Input.is_action_just_pressed("switch_item_left")):
-		Globals.inventory.switch_item(-1)
+		Inventory.switch_item(-1)
 	elif (Input.is_action_just_pressed("switch_item_right")):
-		Globals.inventory.switch_item(1)	
+		Inventory.switch_item(1)	
 
 
 func _interact():

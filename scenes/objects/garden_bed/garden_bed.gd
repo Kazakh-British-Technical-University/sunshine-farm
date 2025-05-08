@@ -7,7 +7,7 @@ var _sound_effect = load("res://assets/audio/handleSmallLeather2.ogg")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Globals.time_manager.day_started.connect(_on_day_ended)
+	TimeManager.day_started.connect(_on_day_ended)
 	
 	if ($InteractableComponent != null):
 		$InteractableComponent.interacted.connect(_on_interacted)
@@ -20,21 +20,17 @@ func _on_interacted(origin):
 		_remove_plant()
 	
 	
-func _plant_seed():
-	var inventory = Globals.inventory
-	if (inventory == null):
-		return
-	
-	var current_item = inventory.current_item
+func _plant_seed():	
+	var current_item = Inventory.current_item
 	if (current_item is not SeedItem):
 		return
 	
-	if (!inventory.try_spend_item(current_item, 1)):
+	if (!Inventory.try_spend_item(current_item, 1)):
 		return
 		
 	plant = load(current_item.plant_resource_path)
 	$PlantSprite.texture = plant.sprite_seed
-	Globals.sfx.play_effect(_sound_effect)
+	SFX.play_effect(_sound_effect)
 	
 	
 func _remove_plant():
@@ -50,12 +46,8 @@ func _remove_plant():
 
 
 func _collect_plant():
-	var inventory = Globals.inventory
-	if (inventory == null):
-		return
-		
 	var product = load(plant.product_resource_path)
-	inventory.add_item(product, plant.product_amount)
+	Inventory.add_item(product, plant.product_amount)
 	
 	
 func _on_day_ended():

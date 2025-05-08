@@ -6,9 +6,9 @@ extends CanvasModulate
 
 
 func _ready():
-	Globals.time_manager.day_started.connect(_on_day_stared)
-	Globals.time_manager.evening_started.connect(_on_evening_stared)
-	Globals.time_manager.night_started.connect(_on_night_stared)
+	TimeManager.day_started.connect(_on_day_stared)
+	TimeManager.evening_started.connect(_on_evening_stared)
+	TimeManager.night_started.connect(_on_night_stared)
 	
 	
 func _on_day_stared():
