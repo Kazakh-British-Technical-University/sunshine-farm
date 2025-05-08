@@ -59,6 +59,3 @@ func _on_day_ended():
 		$PlantSprite.texture = plant.sprite_mature
 	if (grow_phase == plant.days_to_grow + plant.days_to_wither):
 		$PlantSprite.texture = plant.sprite_withered
-	
-	
-	
