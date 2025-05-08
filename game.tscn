@@ -17,3 +17,4 @@ evening_color = Color(0.74902, 0.341176, 0.196078, 1)
 [node name="MainLevel" parent="." instance=ExtResource("4_5yyoq")]
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_eow3j")]
+visible = false
