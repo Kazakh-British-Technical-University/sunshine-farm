@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Plant" load_steps=7 format=3 uid="uid://b3uit2c208ddv"]
+[gd_resource type="Resource" script_class="Plant" load_steps=8 format=3 uid="uid://b3uit2c208ddv"]
 
 [ext_resource type="Script" uid="uid://x68d8yova0k7" path="res://resources/plants/plant.gd" id="1_6mi0s"]
 [ext_resource type="Texture2D" uid="uid://cndft1p8fqbic" path="res://assets/textures/tilemap_packed.png" id="2_qdv5w"]
+[ext_resource type="Texture2D" uid="uid://kfhlyrqwl2m0" path="res://assets/textures/seeds.png" id="3_smre7"]
 [ext_resource type="Texture2D" uid="uid://cgttm4sviq6kg" path="res://assets/textures/roguelikeSheet_transparent.png" id="3_uvvg3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dkfab"]
@@ -9,9 +10,9 @@ atlas = ExtResource("2_qdv5w")
 region = Rect2(127, 56, 16, 16)
 margin = Rect2(0, -6, 0, 0)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ab2fg"]
-atlas = ExtResource("3_uvvg3")
-region = Rect2(748, 170, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_obp72"]
+atlas = ExtResource("3_smre7")
+region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p18s5"]
 atlas = ExtResource("3_uvvg3")
@@ -19,7 +20,7 @@ region = Rect2(221, 138, 16, 16)
 
 [resource]
 script = ExtResource("1_6mi0s")
-sprite_seed = SubResource("AtlasTexture_ab2fg")
+sprite_seed = SubResource("AtlasTexture_obp72")
 sprite_mature = SubResource("AtlasTexture_dkfab")
 sprite_withered = SubResource("AtlasTexture_p18s5")
 name = "Pumpkin"
